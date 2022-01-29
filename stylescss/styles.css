@@ -1,6 +1,8 @@
 body {
   background-color: aquamarine;
   font-family: "Saira Condensed", sans-serif;
+  font-size: 16px;
+
 }
 
 /* Reset */
@@ -20,13 +22,13 @@ img {
 .page-header {
   display: flex;
   justify-content: space-between;
-  margin: 16px 24px;
+  margin: 1rem 1.5rem;
 }
 
 .logo {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.25rem;
   letter-spacing: 3px;
 }
 
@@ -47,7 +49,7 @@ img {
 }
 
 .menu-item {
-  padding-right: 16px;
+  padding-right: 1rem;
   text-transform: uppercase;
 }
 
@@ -55,12 +57,12 @@ img {
   text-decoration: none;
   color: black;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
 .social .icon {
-  height: 20px;
+  height: 1rem;
 }
 
 /* Main area > header > banner */
@@ -80,8 +82,47 @@ img {
 .main-banner-title {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 72px;
+  font-size: 4.5rem;
   letter-spacing: 4px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* main-container-with-margin */
+.main-container-with-margin {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.tagline, .section-title {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  border-bottom: 1px solid black
+}
+
+/* articles area */
+.three-columns-container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.three-columns container__item {
+ width:30%
+}
+
+.column-heading{
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+
+.three-columns-container img {
+width: 80%;
+border-radius: 1.25px;
 }
