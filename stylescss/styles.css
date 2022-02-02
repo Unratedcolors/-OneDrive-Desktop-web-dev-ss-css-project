@@ -161,5 +161,40 @@ border-radius: 1.25px;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 100;
-  margin: 1rem 0 rem;
+  margin: 1rem 0rem;
+}
+
+/* Instagram gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 28%;
+  margin: 10px 15px 20px 15px;
+}
+
+/* Media queries */
+/* Breakpoint suggestions: https://getbootstrap.com/docs/5.1/layout/breakpoints/ 
+   Warning: Bootstrap is mobile first, not desktop first.
+*/
+@media screen and (max-width: 992px) {
+  .gallery-image {
+    width: 44%;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-image {
+    width: 100%;
+  }
 }
