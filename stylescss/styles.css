@@ -9,6 +9,7 @@ body {
   background-color: aquamarine;
   font-family: "Saira Condensed", sans-serif;
   font-size: 16px;
+  min-width: 300px; /* Constraint  for your project*/
 }
 
 img {
