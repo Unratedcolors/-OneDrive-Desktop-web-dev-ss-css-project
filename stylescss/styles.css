@@ -70,12 +70,7 @@ img {
  grid-area: social-menu;
 }
 
-.page-header-menu-container > .menu {
-  display: flex;
-  list-style: none;
-}
-
-.page-header-menu-container > .social {
+.menu, .social {
   display: flex;
   list-style: none;
 }
@@ -187,6 +182,13 @@ border-radius: 1.25px;
 .gallery-image {
   width: 28%;
   margin: 10px 15px 20px 15px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
 }
 
 /* Media queries */
