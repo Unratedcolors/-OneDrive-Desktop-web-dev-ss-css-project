@@ -22,7 +22,7 @@ img {
 }
 
 /* Generic components */
-.btn{
+.btn {
   padding: 1rem 2rem;
   border: 1px solid black;
   text-transform: uppercase;
@@ -42,8 +42,11 @@ img {
 
 /* Header area */
 .page-header {
-  display: flex;
-  justify-content: space-between;
+  display:grid;
+  grid-template-areas:
+    "logo regular-menu social-menu";
+    row-gap: 1.5rem;
+    justify-content: space-between;
   margin: 1rem 1.5rem;
 }
 
@@ -52,12 +55,19 @@ img {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 3px;
+  grid-area: logo;
 }
 
-/* header area */
 .page-header-menu-container {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.page-header-menu-container--regular{
+ grid-area: regular menu;
+}
+
+.page-header-menu-container--social{
+ grid-area: social-menu;
 }
 
 .page-header-menu-container > .menu {
@@ -127,18 +137,20 @@ img {
   border-bottom: 1px solid black
 }
 
-/* articles area */
-.three-columns-container {
+/* articles area 
+-md suffix: we target medium screen sizes and above 
+*/
+.three-columns-container-md {
  display: flex;
  justify-content: space-between;
 }
 
-.three-columns-container__item {
+.three-columns-container-md__item {
  width: 40%;
  margin-bottom: 5rem;
 }
 
-.column-heading{
+.column-heading {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -149,7 +161,7 @@ img {
   margin: 0.5rem 0;
 }
 
-.three-columns-container img {
+.three-columns-container-md__item  img {
 width: 80%;
 border-radius: 1.25px;
 }
@@ -184,18 +196,35 @@ border-radius: 1.25px;
 @media screen and (max-width: 992px) {
   .gallery-image {
     width: 44%;
-    border-radius: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .gallery-image {
-    width: 100%;
-  }
-}
 
-@media screen and (max-width: 576px) {
+  .page-header {
+    grid-template-areas:
+      "logo social-menu"
+      "regular-menu regular-menu";
+  }
+
   .gallery-image {
     width: 100%;
   }
-}
+
+
+    .three-columns-container-md {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-columns-container-md__item {
+      width: 80%;
+    }
+  }  
+
+
+  @media screen and (max-width: 400px) {
+    .d-400minus-none {
+      display: none;
+    }
+  }
