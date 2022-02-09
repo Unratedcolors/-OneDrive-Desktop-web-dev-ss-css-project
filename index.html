@@ -113,6 +113,49 @@
                 <img class="gallery-image" src="./Assets/Chef Geo (4).png" alt="instagram image 2">
                 <img class="gallery-image" src="./Assets/Chef Geo.png" alt="instagram image 3">
           </section>
+          <form action="#" method="GET">
+            <div class="form-row">
+              <label class="label-top" for="name-field">
+                Name:
+              </label>
+              <input 
+                type="text"
+                id="name-field" 
+                name="name" 
+                placeholder="Enter your name" />
+            </div>
+            <div class="form-row">
+              <label class="label-top" for="email-field">Email:</label>
+              <input
+                id="email-field"
+                type="email"
+                name="email"
+                placeholder="Enter your email" />
+            </div>
+            <div class="form-row">
+              <label class="label-top" for="message-field">Message:</label>
+              <textarea 
+              name="message" 
+              id="message field" 
+              cols="30" 
+              rows="10">
+              </textarea>
+            </div>
+            <div class="form-row">
+              <input 
+                type="checkbox" 
+                name="data-protection" 
+                id="data-protection-field" />
+              <label for="data-protection-field">
+                I accept the data protection guidelines.
+              </label>  
+            </div>
+            <div class="form-row">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+
+
           <section class="location-container">
             <h2>Location</h2>
             <iframe 
@@ -152,6 +195,7 @@
         </li>
       </ul>
     </footer>
-    <a class="back-to-top" href="#">Top</a> == $0
+    <span class="fixed-link-circle left">?</span>
+    <a class="fixed-link-circle right" href="#">Top</a>
   </body>
 </html>
