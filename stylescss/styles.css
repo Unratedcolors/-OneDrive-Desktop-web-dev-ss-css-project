@@ -129,7 +129,6 @@ img {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  border-bottom: 1px solid black
 }
 
 /* articles area 
@@ -138,6 +137,7 @@ img {
 .three-columns-container-md {
  display: flex;
  justify-content: space-between;
+ column-gap: 40px;
 }
 
 .three-columns-container-md__item {
@@ -153,11 +153,11 @@ img {
 }
 
 .column-p {
-  margin: 0.5rem 0;
+  margin: 2rem 0;
 }
 
 .three-columns-container-md__item  img {
-width: 80%;
+width: 90%;
 border-radius: 1.25px;
 }
 
